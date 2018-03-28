@@ -1,0 +1,26 @@
+{
+  "name": "mylogin",
+  "version": "1.0.0",
+  "description": "this is a demo of automation test",
+  "main": "index.js",
+  "scripts": {
+    "test": "--experimental-modules login.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhiChenQA/MyLogin.git"
+  },
+  "keywords": [
+    "JS",
+    "git"
+  ],
+  "author": "zhichen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhiChenQA/MyLogin/issues"
+  },
+  "homepage": "https://github.com/ZhiChenQA/MyLogin#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
