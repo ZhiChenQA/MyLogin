@@ -29,9 +29,13 @@ export default class LoginStory extends Story{
             driver.findElement(webdriver.By.tagName('button')).click();
             driver.findElement(webdriver.By.id('result')).getText().then((text)=>{
                 this.actual = text;
-                let regexp = new RegExp(this.actual,'i');
-                let result = regexp.test(this.expected);
-                result? console.log('The case is PASS'):console.log('The case is FAIL'); 
+                //let regexp = new RegExp(this.actual,'i');
+                //let result = regexp.test(this.expected);
+                //let result = ()=>this.actual == this.expected;
+                //let result = (this.actual == this.expected);
+                let result = Object.is(this.actual,this.expected);
+                let tc_pass = 'The case is PASS';
+                result?console.log('The case is PASS'):console.log('The case is FAIL'); 
                 driver.quit();
                 }
             );         
